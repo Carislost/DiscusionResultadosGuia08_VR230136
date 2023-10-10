@@ -1,0 +1,30 @@
+.song-info {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+#scrollingText {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    padding-right: 100%;
+    box-sizing: content-box;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-10%); 
+    }
+}
+
+.custom-center {
+    margin-top: -20vh;
+}
